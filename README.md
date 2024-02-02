@@ -46,8 +46,8 @@
 
 ## User Instruction
 
-  - Click here for the repository: https://github.com/thalim-glam/EmpSQLtracker 
-  - Click here for Readme file: https://github.com/thalim-glam/EmpSQLtracker/blob/main/README.md
+  - Click here for the repository: https://github.com/thalim-glam/socialNth_api 
+  - Click here for Readme file: https://github.com/thalim-glam/socialNth_api/blob/main/README.md 
   - Here is a sample screenshots of my application :
     - Walkthrough Video link: https://drive.google.com/file/d/16TIQZ6X7lXxOFuqxeeKnn4O24m78-JDt/view 
     - Video of the application ![Walkthrough Video](./assets/walkthrough.mp4)
