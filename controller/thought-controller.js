@@ -54,7 +54,9 @@ const thoughtController = {
       })
       .catch((err) => res.json(err));
   },
+
   //----------------------------------------------------------------------
+  // Update thought
   updateThought({ params, body }, res) {
     Thought.findOneAndUpdate({ _id: params.id }, body, {
       new: true,
@@ -69,6 +71,7 @@ const thoughtController = {
       })
       .catch((err) => res.json(err));
   },
+
   //------------------------------------------------------------------------
   // delete Thought
   deleteThought({ params }, res) {
@@ -93,25 +96,38 @@ const thoughtController = {
       .catch((err) => res.json(err));
   },
 
-  // --------------------------- Add reaction ---------------------
+  // --------------------------- ---------------------
+  // Add reaction
   addReaction({ params, body }, res) {
     Thought.findOneAndUpdate(
       { _id: params.thoughtId },
-      { $addToSet: { reactions: body }},
+      { $addToSet: { reactions: body } },
       { new: true, runValidators: true }
     )
-    .then((dbThouhghtData) => {
-      if (!dbThouhghtData) {
-        res.status(404).json({ message: " No such thought found!" });
-        return;
-      }
-      res.json(dbThoughtData);
-    })
-    .catch((err) => res.json(err));
+      .then((dbThouhghtData) => {
+        if (!dbThouhghtData) {
+          res.status(404).json({ message: " No such thought found!" });
+          return;
+        }
+        res.json(dbThoughtData);
+      })
+      .catch((err) => res.json(err));
   },
 
-//---------------------------------- Delete Reaction -------------------------
+  //------------------------------------------------------------ 
+  //Delete Reaction -------------------------
 
-removeReaction( { params }, res)
+  removeReaction({ params }, res) {
+    Thought.findOneAndUpdate(
+      { _id: params.thoughtId },
+      { $pull: { reactions { reactionId: params.reactionId }}
+},
+  { new: true }
+  )
+  .then((dbThoughtData) => res.json(dbThoughtData))
+  .catch((err) => res.json(err));
+},
 
-}
+};
+
+module.exports = thoughtController;
