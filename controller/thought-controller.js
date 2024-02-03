@@ -48,7 +48,7 @@ const thoughtController = {
         if (!dbUserData) {
           return res
             .status(404)
-            .json({ message: Blah blah blah })
+            .json({ message: "Thought is not found nor being created" })
         }
         res.json({ message: "Thought is being created successfully." })
       })
