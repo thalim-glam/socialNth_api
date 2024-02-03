@@ -93,7 +93,25 @@ const thoughtController = {
       .catch((err) => res.json(err));
   },
 
+  // --------------------------- Add reaction ---------------------
+  addReaction({ params, body }, res) {
+    Thought.findOneAndUpdate(
+      { _id: params.thoughtId },
+      { $addToSet: { reactions: body }},
+      { new: true, runValidators: true }
+    )
+    .then((dbThouhghtData) => {
+      if (!dbThouhghtData) {
+        res.status(404).json({ message: " No such thought found!" });
+        return;
+      }
+      res.json(dbThoughtData);
+    })
+    .catch((err) => res.json(err));
+  },
 
+//---------------------------------- Delete Reaction -------------------------
 
+removeReaction( { params }, res)
 
 }
