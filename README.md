@@ -15,7 +15,7 @@
 ## Installation
 
 - Here are the installation process :
-  - [1] Here is the repo for this application https://github.com/thalim-glam/EmpSQLtracker 
+  - [1] Here is the repo for this application https://github.com/thalim-glam/socialNth_api
   - [2] Clone the repository or download the zip folder.
   - [3] Open the source code in your code editor (for example VSCode).
   - [4] Open the integrated terminal or git bash to test the application.
