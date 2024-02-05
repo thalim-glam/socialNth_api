@@ -1,20 +1,20 @@
 {
   "name": "socialnth_api",
   "version": "1.0.0",
-  "description": "This project builds an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
+  "description": "This project builds an API for a social network web application where users can share their thoughts, react to friends thoughts, and create a friend list",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server",
-    "seed": "node utils/seed"
+    "test": "echo \"Error: no test found\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
-    "express": "^4.17.1",
-    "mongoose": "^7.0.2"
+    "express": "^4.18.2",
+    "mongoose": "^6.12.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.9"
+    "nodemon": "^3.0.3"
   },
   "keywords": [],
   "author": "",
