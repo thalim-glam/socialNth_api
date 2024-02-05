@@ -16,7 +16,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: timestamp => `NEED TO FORMAT DATE ${timestamp}`,
+      get: (timestamp) => dateFormat(timestamp),
     },
 
     username: {
@@ -27,6 +27,7 @@ const reactionSchema = new Schema(
   {
     toJSON: {
       getters: true,
+      virtual: true, 
     },
   }
 );
@@ -44,7 +45,7 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: timestamp => `NEED TO FORMAT DATE ${timestamp}`,
+      get: (timestamp) => dateFormat(timestamp),
     },
 
     username: {
