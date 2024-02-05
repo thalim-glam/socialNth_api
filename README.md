@@ -50,8 +50,8 @@
   - Click here for Readme file: https://github.com/thalim-glam/socialNth_api/blob/main/README.md 
   - Here is a sample screenshots of my application :
     - Walkthrough Video link: https://drive.google.com/file/d/16TIQZ6X7lXxOFuqxeeKnn4O24m78-JDt/view 
-    - Video of the application ![Walkthrough Video](./assets/walkthrough.mp4)
-    - Screenshot ![Screenshot](./assets/Screenshot.png)
+    - Screenshot of Users ![Screenshot](./image/Screenshot_User_friends.jpg)
+    - Screenshot ![Screenshot](./image/Screenshot_Thought_reactions.jpg)
     
 ## Command line code
 

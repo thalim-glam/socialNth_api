@@ -1,5 +1,6 @@
 const { Thought, User } = require("../models");
 
+//---------------------------------------------GET ALL THOUGHTS--------------
 const thoughtController = {
   getAllThought(req, res) {
     Thought.find({})
@@ -16,6 +17,7 @@ const thoughtController = {
       });
   },
 
+  //------------------------------------------GET THOUGHT BY ID--------------
   getThoughtById({ params }, res) {
     Thought.findOne({ _id: params.id })
       .populate({
@@ -35,6 +37,7 @@ const thoughtController = {
       });
   },
 
+  //--------------------------------------------- CREATING THOUGHTS -------------
   createThought({ params, body }, res) {
     Thought.create(body)
       .then(({ _id }) => {
@@ -76,7 +79,7 @@ const thoughtController = {
   // delete Thought
   deleteThought({ params }, res) {
     Thought.findOneAndDelete({ _id: params.id })
-      .than((dbThoughtData) => {
+      .then((dbThoughtData) => {
         if (!dbThoughtData) {
           return res.status(404).json({ message: "No thought with this id!" });
         }
