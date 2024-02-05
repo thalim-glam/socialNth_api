@@ -51,7 +51,8 @@
   - Here is a sample screenshots of my application :
     - Walkthrough Video link: https://drive.google.com/file/d/16TIQZ6X7lXxOFuqxeeKnn4O24m78-JDt/view 
     - Screenshot of Users ![Screenshot](./image/Screenshot_User_friends.jpg)
-    - Screenshot ![Screenshot](./image/Screenshot_Thought_reactions.jpg)
+    - Screenshot of Thoughts ![Screenshot](./image/Screenshot_Thought_reactions.jpg)
+    - Screenshot of Reactions ![Screenshot](./image/Screenshot_Reactions.jpg)
     
 ## Command line code
 
@@ -70,7 +71,7 @@ I used the following command lines:
 ## Credits
 
 Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, and 
-- Google (my best buddy)
+- Google 
 - Geeks for Geeks
 - Stack Overflow
 - MySQL documentatiion
@@ -84,8 +85,8 @@ Apart from me :D the credit also goes to my Instructor, TAs, Tutor, Classmates, 
 
 To test this application please type, 
   - npm i [To install node modules if not there]
-  - make sure the dependecies inside package.json have ("dotenv": "^8.2.0", "console.table": "^0.10.0", "inquirer": "^8.2.4", "asciiart-logo": "^0.2.6", "mysql2": "^3.1.0").
-  - npm run start [ To start the server ]
+  - make sure I have all the necessary dependecies inside package.json
+  - node server.js [ To start the server ]
   - For more information please refer to the walkthrough video.
 
 ### Done By: Tasneem Halim 😎
