@@ -49,7 +49,8 @@
   - Click here for the repository: https://github.com/thalim-glam/socialNth_api 
   - Click here for Readme file: https://github.com/thalim-glam/socialNth_api/blob/main/README.md 
   - Here is a sample screenshots of my application :
-    - Walkthrough Video link: https://drive.google.com/file/d/16TIQZ6X7lXxOFuqxeeKnn4O24m78-JDt/view 
+    - Walkthrough Video (User_friend) ![GIF](./image/User_friends.gif)
+    - Walkthrough Video (User_friend) ![GIF](./image/User_friends.gif)
     - Screenshot of Users ![Screenshot](./image/Screenshot_User_friends.jpg)
     - Screenshot of Thoughts ![Screenshot](./image/Screenshot_Thought_reactions.jpg)
     - Screenshot of Reactions ![Screenshot](./image/Screenshot_Reactions.jpg)
