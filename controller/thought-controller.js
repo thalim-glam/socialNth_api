@@ -107,8 +107,8 @@ const thoughtController = {
       { $addToSet: { reactions: body } },
       { new: true, runValidators: false }
     )
-      .then((dbThouhghtData) => {
-        if (!dbThouhghtData) {
+      .then((dbThoughtData) => {
+        if (!dbThoughtData) {
           res.status(404).json({ message: " No such thought found!" });
           return;
         }
