@@ -50,7 +50,7 @@
   - Click here for Readme file: https://github.com/thalim-glam/socialNth_api/blob/main/README.md 
   - Here is a sample screenshots of my application :
     - Walkthrough Video (User_friend) ![GIF](./image/User_friends.gif)
-    - Walkthrough Video (User_friend) ![GIF](./image/User_friends.gif)
+    - Walkthrough Video (Thought_reaction) ![GIF](./image/Thought_reaction.mpeg)
     - Screenshot of Users ![Screenshot](./image/Screenshot_User_friends.jpg)
     - Screenshot of Thoughts ![Screenshot](./image/Screenshot_Thought_reactions.jpg)
     - Screenshot of Reactions ![Screenshot](./image/Screenshot_Reactions.jpg)
